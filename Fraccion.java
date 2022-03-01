@@ -48,6 +48,10 @@ public class Fraccion{
         return fraccionResultado;
     } //restar fracciones con denominadores iguales
     
+    Fraccion potencia(int exponente){
+        return new Fraccion((int) Math.pow(this.numerador, exponente), (int) Math.pow(this.denominador, exponente));
+    } //potencia de fracciones
+    
     /*Fraccion decimal(){
         float nuevoDecimal = this.numerador / this.denominador;
         
